@@ -1,10 +1,11 @@
-function wordCount(word){
-    return word.split(" ").length;
-}
+function getCount(str) {
+    return str.split(' ').filter(function(num) {
+     return num != ''
+    }).length;
+   }
 
-let statement = "Hello Dayanand Kumar Kasagala";
-
-console.log(wordCount(this.wordCount))
+   var string = 'LinuxHint is the best Website for learning skills';
+   console.log('Total Words in String: '+ getCount(string));
 
 // function countWords(s){
 //     s = s.replace(/(^\s*)|(\s*$)/gi,"");//exclude  start and end white-space
